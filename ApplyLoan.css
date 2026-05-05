@@ -1,0 +1,207 @@
+/* ================================
+   APPLY LOAN PAGE
+================================ */
+.apply-loan {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ================================
+   HEADINGS
+================================ */
+.apply-loan h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #0d6efd;
+}
+
+.apply-loan h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+/* ================================
+   FORM GROUP
+================================ */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.form-group input[type="file"] {
+  padding: 8px;
+  background-color: #fafafa;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #0d6efd;
+  box-shadow: 0 0 6px rgba(13, 110, 253, 0.25);
+}
+
+/* ================================
+   BUTTONS
+================================ */
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #0d6efd;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: #084298;
+}
+
+.submit-btn:disabled {
+  background-color: #adb5bd;
+  cursor: not-allowed;
+}
+
+/* ================================
+   ALERTS
+================================ */
+.alert {
+  padding: 14px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.alert-success {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  border: 1px solid #badbcc;
+}
+
+.alert-error {
+  background-color: #f8d7da;
+  color: #842029;
+  border: 1px solid #f5c2c7;
+}
+
+/* ================================
+   OTP SECTION
+================================ */
+.otp-box {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.otp-box input {
+  flex: 1;
+}
+
+.otp-btn {
+  padding: 12px 20px;
+  background-color: #198754;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.otp-btn:hover {
+  background-color: #146c43;
+}
+
+/* ================================
+   STATUS BADGES
+================================ */
+.status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.status-pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-approved {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+.status-rejected {
+  background-color: #f8d7da;
+  color: #842029;
+}
+
+.status-otp {
+  background-color: #cff4fc;
+  color: #055160;
+}
+
+/* ================================
+   DOWNLOAD PDF BUTTON
+================================ */
+.download-btn {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background-color: #6f42c1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background-color: #59339d;
+}
+
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+  .apply-loan {
+    padding: 18px;
+  }
+
+  .form-group input {
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    font-size: 16px;
+    padding: 14px;
+  }
+
+  .otp-box {
+    flex-direction: column;
+  }
+}
